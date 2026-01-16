@@ -1,4 +1,4 @@
 streamlit
-pillow
+pillowpython-dotenv
 google.generativeai
 datetime

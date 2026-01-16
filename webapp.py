@@ -3,9 +3,12 @@ import google.generativeai as genai
 from PIL import Image
 import datetime as dt
 import os
+from dotenv import load_dotenv
+
+load_dotenv() # Activate the Api key from .env file
 
 # Configure the model
-key = os.getenv('GOOGLE_API_KEY')
+key = os.getenv('google_api_key')
 genai.configure(api_key=key)
 model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
